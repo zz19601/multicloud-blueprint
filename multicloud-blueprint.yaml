@@ -326,9 +326,11 @@ inputs:
 
   vcloud_catalog:
     type: string
+    default: ''
 
   vcloud_template:
     type: string
+    default: ''
 
   vcloud_server_cpu:
     default: 2
@@ -342,28 +344,10 @@ inputs:
 
   vcloud_agent_public_key:
     type: string
+    default: ''
 
   edge_gateway:
     default: gateway
     description: >
       For 'ondemand' service type, the value of edge_gateway
       is always 'gateway'
-
-# Cloudstack Inputs:
-
-  cloudstack_zone:
-    description: >
-      The CloudStack zone the application will be installed in
-
-  cloudstack_network_service_offering:
-    description: >
-      The CloudStack serviceoffering of the application network created by the blueprint
-
-  cloudstack_management_network_resource_id:
-    description: >
-      The name of the cloudify management network created during the manager bootstrap process
-
-  cloudstack_nodecellar_network_resource_id:
-    description: >
-      The name of the dedicated application network to be created.
-    default: nodecellar_network
