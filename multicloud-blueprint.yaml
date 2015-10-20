@@ -326,11 +326,9 @@ inputs:
 
   vcloud_catalog:
     type: string
-    default: ''
 
   vcloud_template:
     type: string
-    default: ''
 
   vcloud_server_cpu:
     default: 2
@@ -344,7 +342,6 @@ inputs:
 
   vcloud_agent_public_key:
     type: string
-    default: ''
 
   edge_gateway:
     default: gateway
